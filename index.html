@@ -45,15 +45,16 @@
         }
         
         .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Distribute space evenly around items */
-    gap: 20px; /* Space between images */
+   display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; /* Space between images */
+        max-width: 800px; /* Adjust the max-width as needed */
+        margin: auto; /* Center the gallery */
 }
 
 .gallery img {
-    width: 200px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height */
+    width: 100%; /* Set a fixed width */
+    height: auto; /* Set a fixed height */
     object-fit: cover; /* Ensure that the image covers the entire area */
     background-color: rgba(255, 255, 255, 0.5); /* Add this line to set a white background for the images */
     padding: 10px; /* Optional: Add some padding for better visual separation */
