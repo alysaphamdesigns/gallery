@@ -55,6 +55,13 @@
          .image-container img:last-child {
             margin-right: 0; /* Remove margin-right for the last image */
          }
+         .image-text {
+            background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
+            font-family: 'Courier New', monospace; /* Change the font */
+            padding: 10px;
+            color: black;
+            display: inline-block; /* Ensure the background is only around the text */
+        }
         
     </style>
     <title>3D Printing</title>    
@@ -78,6 +85,9 @@
      <div class="image-container">
         <img src="bunnyblender.jpg" alt="bunny" width="500" height="400">
         <img src="print.JPG" alt="print out" width="400" height="600">
+         <p class="image-text">This is a model that I made in Blender. 
+This model is based off of 3-D art and modeling that I originally did in Minecraft. I then took this file and made it into a STL file- which further allowed me to 3-D print it using FlashForge. 
+</p>
      </div>
     
 </body>
