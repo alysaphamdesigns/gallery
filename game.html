@@ -57,16 +57,22 @@
          .image-container img:last-child {
             margin-right: 0; /* Remove margin-right for the last image */
          }
+        .image-container iframe {
+        display: block;
+        margin: 0 auto; /* Center the iframe horizontally */
+    }
          .image-text {
             background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
             font-family: 'Courier New', monospace; /* Change the font */
             padding: 10px;
             color: black;
             display: inline-block; /* Ensure the background is only around the text */
-        }
+            margin: 10px auto; /* Add margin and center it horizontally */
+            text-align: center; /* Center-align the text inside */
+    }
         
     </style>
-    <title>DIY PS</title>    
+    <title>game</title>    
 </head>
 <body>
     <nav class="navbar">
@@ -89,7 +95,6 @@
 
      <div class="image-container">
         <iframe src="game/index.html" style="height:600px;width:600px;" title="Iframe Example"></iframe>
-         
          <p class="image-text">Swat the Fly!!
 </p>
      </div>
